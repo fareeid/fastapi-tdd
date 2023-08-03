@@ -11,6 +11,9 @@ python = "^3.11"
 fastapi = "^0.100.1"
 uvicorn = "^0.23.2"
 pydantic-settings = "^2.0.2"
+asyncpg = "^0.28.0"
+tortoise-orm = "^0.19.3"
+aerich = "^0.7.2"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -29,6 +32,10 @@ include_trailing_comma = true
 force_grid_wrap = 0
 line_length = 88
 
+[tool.aerich]
+tortoise_orm = "app.db.TORTOISE_ORM"
+location = "./migrations"
+src_folder = "./."
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
