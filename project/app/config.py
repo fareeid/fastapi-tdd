@@ -14,7 +14,8 @@ log = logging.getLogger("uvicorn")
 class Settings(BaseSettings):
     environment: str = "dev"
     testing: bool = bool(0)
-    database_url: AnyUrl = None  # type: ignore
+    database_url: AnyUrl | None = None
+    # type: ignore
 
 
 @lru_cache()
