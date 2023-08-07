@@ -3,7 +3,7 @@
 
 from fastapi import APIRouter, HTTPException
 
-from app.api import crud
+from app.api import crud  # type: ignore
 from app.models.pydantic import SummaryPayloadSchema, SummaryResponseSchema
 from app.models.tortoise import SummarySchema
 
