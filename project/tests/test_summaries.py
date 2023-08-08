@@ -3,7 +3,7 @@
 
 import json
 
-import pytest
+# import pytest
 
 
 def test_create_summary(test_app_with_db):

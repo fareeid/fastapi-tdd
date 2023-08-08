@@ -1,5 +1,5 @@
-import os
 import logging  # new
+import os
 
 from fastapi import FastAPI
 from tortoise import Tortoise, run_async  # new
