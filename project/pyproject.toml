@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Fareeid <faridkim@gmail.com>"]
 readme = "README.md"
-packages = [{include = "fastapi_tdd"}]
+packages = [{ include = "fastapi_tdd" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -16,6 +16,7 @@ tortoise-orm = "^0.19.3"
 aerich = "^0.7.2"
 httpx = "^0.24.1"
 gunicorn = "^21.2.0"
+pytest = "^7.4.0"
 
 
 [tool.poetry.group.dev.dependencies]
