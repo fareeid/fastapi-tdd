@@ -1,6 +1,6 @@
 # project/app/models/pydantic.py
 
-from pydantic import AnyHttpUrl, BaseModel
+from pydantic import BaseModel
 
 
 class SummaryPayloadSchema(BaseModel):

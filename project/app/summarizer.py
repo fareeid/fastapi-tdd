@@ -1,10 +1,10 @@
 # project/app/summarizer.py
 
-import asyncio
+# import asyncio
 import nltk  # type: ignore
 from newspaper import Article  # type: ignore
 
-from pydantic import AnyHttpUrl
+# from pydantic import AnyHttpUrl
 from app.models.tortoise import TextSummary
 
 
