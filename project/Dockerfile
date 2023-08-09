@@ -15,9 +15,9 @@ RUN apt-get update \
 
 # Install Poetry
 RUN curl -sSL https://install.python-poetry.org | POETRY_HOME=/opt/poetry python && \
-    cd /usr/local/bin && \
-    ln -s /opt/poetry/bin/poetry && \
-    poetry config virtualenvs.create false
+  cd /usr/local/bin && \
+  ln -s /opt/poetry/bin/poetry && \
+  poetry config virtualenvs.create false
 
 # install python dependencies
 # RUN pip install --upgrade pip
@@ -38,4 +38,4 @@ COPY ./entrypoint.sh .
 RUN chmod +x /usr/src/app/entrypoint.sh
 
 # run entrypoint.sh
-ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
+# ENTRYPOINT ["/usr/src/app/entrypoint.sh"]

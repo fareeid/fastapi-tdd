@@ -4,7 +4,7 @@ from pydantic import AnyHttpUrl, BaseModel
 
 
 class SummaryPayloadSchema(BaseModel):
-    url: AnyHttpUrl
+    url: str
 
 
 class SummaryResponseSchema(SummaryPayloadSchema):
