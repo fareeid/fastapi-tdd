@@ -1,7 +1,7 @@
 # project/app/api/summaries.py
 
 
-from fastapi import APIRouter, HTTPException, Path, BackgroundTasks
+from fastapi import APIRouter, BackgroundTasks, HTTPException, Path
 
 from app.api import crud  # type: ignore
 from app.models.pydantic import (

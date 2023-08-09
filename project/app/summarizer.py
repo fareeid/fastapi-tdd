@@ -7,7 +7,6 @@ from newspaper import Article  # type: ignore
 # from pydantic import AnyHttpUrl
 from app.models.tortoise import TextSummary
 
-
 # def generate_summary(url: str) -> str:
 #     article = Article(url)
 #     article.download()
