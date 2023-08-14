@@ -7,7 +7,7 @@ FROM python:3.11.4-slim-bullseye as builder
 
 # install system dependencies
 RUN apt-get update \
-    && apt-get -y install gcc postgresql \
+    && apt-get -y install gcc \
     && apt-get clean
 
 # set work directory
@@ -57,7 +57,7 @@ ENV TESTING 0
 
 # install system dependencies
 RUN apt-get update \
-    && apt-get -y install netcat gcc postgresql \
+    && apt-get -y install netcat gcc \
     && apt-get clean
 
 # Dependency management using Poetry
